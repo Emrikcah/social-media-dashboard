@@ -1,87 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+      <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+      <!-- Google fonts -->
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+      <!-- My Styles -->
+      <link rel="stylesheet" href="css/main.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+      <title>Frontend Mentor | [Challenge Name Here]</title>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+      <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+      <style>
+         .attribution {
+            font-size: 11px;
+            text-align: center;
+         }
+         .attribution a {
+            color: hsl(228, 45%, 44%);
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <!-- header -->
+         <header class="title">
+            <div class="title__heading">
+               <h1 class="title__main">Social Media Dashboard</h1>
+               <p class="title__numbers">Total Followers: 23,004</p>
+            </div>
 
-  Dark Mode
+            <div class="title__mode">
+               <p class="title__mode-clr">Dark Mode</p>
 
-  
+               <div class="title__toggle">
+                  <input type="checkbox" class="checkbox" id="checkbox" />
+                  <label for="checkbox" class="label">
+                     <div class="ball"></div>
+                  </label>
+               </div>
+            </div>
+         </header>
+         <!-- header end -->
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+         <!-- main -->
+         <main class="main">
+            <div class="main__card">
+               <div class="main__name">
+               <img src="images/icon-facebook.svg" alt="">   <p>
+                  @nathanf
+               </p>
+               </div>
+               <p class="main__num">1987</p>
+               <p class="main__followers">Followers</p>
+               <div class="main__visitors">
+                  <img src="images/icon-up.svg" alt="">
+                  12 Today
+               </div>
+            </div>
 
-  @nathanf
-  1044
-  Followers
-  99 Today
+            <div class="main__card">
+               <div class="main__name">
+                  <img src="images/icon-twitter.svg" alt=""> 
+                  <p>
+                     @nathanf
+                  </p>
+               </div>
+               <p class="main__num">1044</p>
+               <p class="main__followers">Followers</p>
+               <div class="main__visitors green">
+                  <img src="images/icon-up.svg" alt="">
+                  99 Today
+               </div>
+            </div>
 
-  @realnathanf
-  11k
-  Followers
-  1099 Today
+            <div class="main__card">
+               <div class="main__name">
+                  <img src="images/icon-instagram.svg" alt=""> 
+                  <p>
+                     @realnathanf
+                  </p>
+               </div>
+               <p class="main__num">11k</p>
+               <p class="main__followers">Followers</p>
+               <div class="main__visitors green">
+                  <img src="images/icon-up.svg" alt="">
+                  1099 Today
+               </div>
+            </div>
 
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+            <div class="main__card">
+               <div class="main__name">
+                  <img src="images/icon-youtube.svg" alt=""> 
+                  <p>
+                     Nathan F.
+                  </p>
+               </div>
+               <p class="main__num">8239</p>
+               <p class="main__followers">Subscribers</p>
+               <div class="main__visitors red">
+                  <img src="images/icon-down.svg" alt="">
+                  144 Today
+               </div>
+            </div>
+         </main>
+         <!-- main end -->
 
+         <!-- overview -->
+         <div class="overview">
+            <h1 class="overview__title">Overview - Today</h1>
 
+            <div class="card">
+               <img src="images/icon-facebook.svg" alt="facebook">
+               <p class="overview__subtitle">Page Views</p>
+               <p class="overview__num">87</p>
+               <p class="overview__percent">3%</p>
+            </div>
 
-  Overview - Today
+            <div class="card">
+               <img src="images/icon-facebook.svg" alt="facebook">
+               <p class="overview__subtitle">Likes</p>
+               <p class="overview__num">52</p>
+               <p class="overview__percent">2%</p>
+            </div>
 
-  Page Views
-  87
-  3%
+            <div class="card">
+               <img src="images/icon-instagram.svg" alt="instagram">
+               <p class="overview__subtitle">Likes</p>
+               <p class="overview__num">5462</p>
+               <p class="overview__percent">2257%</p>
+            </div>
 
-  Likes
-  52
-  2%
+            <div class="card">
+               <img src="images/icon-instagram.svg" alt="instagram">
+               <p class="overview__subtitle">Profile Views</p>
+               <p class="overview__num">52k</p>
+               <p class="overview__percent">1375%</p>
+            </div>
 
-  Likes
-  5462
-  2257%
+            <div class="card">
+               <img src="images/icon-twitter.svg" alt="twitter">
+               <p class="overview__subtitle">Retweets</p>
+               <p class="overview__num">117</p>
+               <p class="overview__percent">303%</p>
+            </div>
 
-  Profile Views
-  52k
-  1375%
+            <div class="card">
+               <img src="images/icon-twitter.svg" alt="twitter">
+               <p class="overview__subtitle">Likes</p>
+               <p class="overview__num">507</p>
+               <p class="overview__percent">553%</p>
+            </div>
 
-  Retweets
-  117
-  303%
+            <div class="card">
+               <img src="images/icon-youtube.svg" alt="youtube">
+               <p class="overview__subtitle">Likes</p>
+               <p class="overview__num">107</p>
+               <p class="overview__percent">19%</p>
+            </div>
 
-  Likes
-  507
-  553%
+            <div class="card">
+               <img src="images/icon-youtube.svg" alt="youtube">
+               <p class="overview__subtitle">Total Views</p>
+               <p class="overview__num">1407</p>
+               <p class="overview__percent">12%</p>
+            </div>
+         </div>
+         <!-- overview end -->
+      </div>
+      <!-- container end -->
 
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      <div class="attribution">
+         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+         <a href="#">Your Name Here</a>.
+      </div>
+   </body>
 </html>

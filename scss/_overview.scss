@@ -1,0 +1,43 @@
+.overview{
+   &__title{
+      margin-bottom: 24px;
+   }
+
+   .card{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      padding: 27px 31px 15px 24px;
+      margin-bottom: 16px;
+      width: 326px;
+      min-height: 125px;
+      border-radius: 5px;
+      background-color: $dark-desaturated-blue;
+
+   }
+
+   &__subtitle{
+      font-size: $font-sm;
+      font-weight: $bold;
+      color: $desaturated-blue;
+   }
+
+   img{
+      grid-row: 1;
+      grid-column: 2;
+      justify-self: end;
+      
+   }
+
+   &__percent{
+      font-size: $font-xs;
+      font-weight: $bold;
+      justify-self: end;
+      align-self: end;
+   }
+
+   &__num{
+      font-size: $font-lg;
+      align-self: end;
+   }
+}

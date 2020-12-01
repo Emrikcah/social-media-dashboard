@@ -1,1 +1,230 @@
-/* No CSS */
+.title__toggle {
+  /* target the adjacent sibling with a child of ball */
+}
+
+.title__toggle .label {
+  position: relative;
+  display: flex;
+  background-image: linear-gradient(to right, #378fe6, #3eda82);
+  border-radius: 50px;
+  height: 24px;
+  width: 50px;
+  padding: 5px;
+}
+
+.title__toggle .ball {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #1e202a;
+  /* transiton the transform property */
+  transition: transform 0.2s linear;
+}
+
+.title__toggle .checkbox {
+  opacity: 0;
+  position: absolute;
+  /* this removes the checkbox so it does not take up space*/
+}
+
+.title__toggle .checkbox:checked + .label .ball {
+  /* background-color: red; */
+  transform: translateX(26px);
+}
+
+.overview__title {
+  margin-bottom: 24px;
+}
+
+.overview .card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 27px 31px 15px 24px;
+  margin-bottom: 16px;
+  width: 326px;
+  min-height: 125px;
+  border-radius: 5px;
+  background-color: #252a41;
+}
+
+.overview__subtitle {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #8b97c6;
+}
+
+.overview img {
+  grid-row: 1;
+  grid-column: 2;
+  justify-self: end;
+}
+
+.overview__percent {
+  font-size: 1.2rem;
+  font-weight: 700;
+  justify-self: end;
+  align-self: end;
+}
+
+.overview__num {
+  font-size: 3.2rem;
+  align-self: end;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #1e202a;
+  color: white;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding-top: 36px;
+  padding-bottom: 45px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.title {
+  margin-bottom: 42px;
+}
+
+.title__heading {
+  margin-bottom: 42px;
+}
+
+.title__main {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.title__numbers, .title__mode-clr {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #8b97c6;
+}
+
+.title__mode {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 46px;
+}
+
+.main__card {
+  position: relative;
+  text-align: center;
+  width: 326px;
+  background-color: #252a41;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.main__card:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.main__card::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+}
+
+.main__card:nth-child(1)::before {
+  background-color: #198ff5;
+}
+
+.main__card:nth-child(2)::before {
+  background-color: #1da1f2;
+}
+
+.main__card:nth-child(3)::before {
+  background-color: linear-gradient(to right #fdc468, #df4996);
+}
+
+.main__card:nth-child(4)::before {
+  background-color: #c4032a;
+}
+
+.main .main__name {
+  display: flex;
+  justify-content: center;
+  font-size: 1.4rem;
+  padding-top: 35px;
+  padding-bottom: 29px;
+  width: 100%;
+}
+
+.main .main__name img {
+  margin-right: 8px;
+}
+
+.main .card-img {
+  width: 10px;
+  height: 10px;
+  background-size: conver;
+}
+
+.main__num {
+  font-size: 5.6rem;
+  margin-bottom: -16px;
+}
+
+.main__followers {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 5px;
+  margin-bottom: 23px;
+}
+
+.main__visitors {
+  padding-bottom: 23px;
+  font-size: 1.4rem;
+}
+
+.main__visitors img {
+  margin-bottom: 5px;
+}
+
+.main__visitors.green {
+  color: #1db489;
+}
+
+.main__visitors.red {
+  color: #dc414c;
+}
+
+.main__name, .main__num, .main__visitors {
+  font-weight: 700;
+}
+
+.main__name, .main__followers {
+  color: #8b97c6;
+}

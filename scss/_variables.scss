@@ -1,0 +1,45 @@
+$lime-green: hsl(163, 72%, 41%);
+$bright-red: hsl(356, 69%, 56%);
+$facebook: hsl(208, 92%, 53%);
+$twitter: #1da1f2;
+$instagram: linear-gradient(to right hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+$youtube: hsl(348, 97%, 39%);
+$card-colors: $facebook, $twitter, $instagram, $youtube;
+$card-icons: "../images/icon-up.svg","../images/icon-up.svg","../images/icon-up.svg","../images/icon-down.svg";
+
+// Dark Theme
+$dark-toggle: linear-gradient(to right hsl(210, 78%, 56%), rgb(62, 218, 130));
+//BG
+$very-dark-blue: hsl(230, 17%, 14%);
+// top bg pattern
+$top-bg-pattern: hsl(232, 19%, 15%);
+//card bg
+$dark-desaturated-blue: hsl(228, 28%, 20%);
+// text
+$desaturated-blue: hsl(228, 34%, 66%);
+//text
+$white: hsl(0, 0%, 100%);
+
+//light theme
+$light-toggle: hsl(230, 22%, 74%);
+//bg
+$white: hsl(0, 0%, 100%);
+//top bg pattern
+$very-pale-blue: hsl(225, 100%, 98%);
+//card bg
+$light-grayish-blue: hsl(227, 47%, 96%);
+//text
+$dark-grayish-blue: hsl(228, 12%, 44%);
+//text
+$very-dark-blue: hsl(230, 17%, 14%);
+
+//font
+$inter: "Inter", sans-serif;
+$regular: 400;
+$bold: 700;
+
+$font-xs: 1.2rem;
+$font-sm: 1.4rem;
+$font-md: 2.4rem;
+$font-lg: 3.2rem;
+$font-xl: 5.6rem;

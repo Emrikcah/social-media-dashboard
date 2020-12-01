@@ -1,0 +1,35 @@
+.title__toggle{
+   .label {
+      position: relative;
+      display: flex;
+      background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+      border-radius: 50px;
+      height: 24px;
+      width: 50px;
+      padding: 5px;
+   }
+   
+   .ball {
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background-color: $very-dark-blue;
+      /* transiton the transform property */
+      transition: transform 0.2s linear;
+   }
+   
+   .checkbox {
+      opacity: 0;
+      position: absolute; /* this removes the checkbox so it does not take up space*/
+   }
+   
+   /* target the adjacent sibling with a child of ball */
+   .checkbox:checked + .label .ball {
+      /* background-color: red; */
+      transform: translateX(26px);
+   
+   }
+}
