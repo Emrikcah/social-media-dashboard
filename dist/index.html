@@ -27,6 +27,7 @@
    </head>
    <body>
       <div class="container">
+         <div class="bg-pattern"></div>
          <!-- header -->
          <header class="title">
             <div class="title__heading">
@@ -39,7 +40,7 @@
 
                <div class="title__toggle">
                   <input type="checkbox" class="checkbox" id="checkbox" />
-                  <label for="checkbox" class="label">
+                  <label for="checkbox" class="label" id="label">
                      <div class="ball"></div>
                   </label>
                </div>
@@ -51,59 +52,52 @@
          <main class="main">
             <div class="main__card">
                <div class="main__name">
-               <img src="images/icon-facebook.svg" alt="">   <p>
-                  @nathanf
-               </p>
+                  <img src="images/icon-facebook.svg" alt="" />
+                  <p>@nathanf</p>
                </div>
                <p class="main__num">1987</p>
                <p class="main__followers">Followers</p>
-               <div class="main__visitors">
-                  <img src="images/icon-up.svg" alt="">
+               <div class="main__visitors green">
+                  <img src="images/icon-up.svg" alt="" />
                   12 Today
                </div>
             </div>
 
             <div class="main__card">
                <div class="main__name">
-                  <img src="images/icon-twitter.svg" alt=""> 
-                  <p>
-                     @nathanf
-                  </p>
+                  <img src="images/icon-twitter.svg" class="twitter" alt="" />
+                  <p>@nathanf</p>
                </div>
                <p class="main__num">1044</p>
                <p class="main__followers">Followers</p>
                <div class="main__visitors green">
-                  <img src="images/icon-up.svg" alt="">
+                  <img src="images/icon-up.svg" alt="" />
                   99 Today
                </div>
             </div>
 
             <div class="main__card">
                <div class="main__name">
-                  <img src="images/icon-instagram.svg" alt=""> 
-                  <p>
-                     @realnathanf
-                  </p>
+                  <img src="images/icon-instagram.svg" alt="" />
+                  <p>@realnathanf</p>
                </div>
                <p class="main__num">11k</p>
                <p class="main__followers">Followers</p>
                <div class="main__visitors green">
-                  <img src="images/icon-up.svg" alt="">
+                  <img src="images/icon-up.svg" alt="" />
                   1099 Today
                </div>
             </div>
 
             <div class="main__card">
                <div class="main__name">
-                  <img src="images/icon-youtube.svg" alt=""> 
-                  <p>
-                     Nathan F.
-                  </p>
+                  <img src="images/icon-youtube.svg" alt="" />
+                  <p>Nathan F.</p>
                </div>
                <p class="main__num">8239</p>
                <p class="main__followers">Subscribers</p>
                <div class="main__visitors red">
-                  <img src="images/icon-down.svg" alt="">
+                  <img src="images/icon-down.svg" alt="" />
                   144 Today
                </div>
             </div>
@@ -113,70 +107,92 @@
          <!-- overview -->
          <div class="overview">
             <h1 class="overview__title">Overview - Today</h1>
+            <div class="overview__grid">
+               <div class="overview__card">
+                  <img src="images/icon-facebook.svg" alt="facebook" />
+                  <p class="overview__subtitle">Page Views</p>
+                  <p class="overview__num">87</p>
+                  <div class="overview__percent green">
+                     <img src="images/icon-up.svg" alt="" />
+                     3%
+                  </div>
+               </div>
 
-            <div class="card">
-               <img src="images/icon-facebook.svg" alt="facebook">
-               <p class="overview__subtitle">Page Views</p>
-               <p class="overview__num">87</p>
-               <p class="overview__percent">3%</p>
-            </div>
+               <div class="overview__card">
+                  <img src="images/icon-facebook.svg" alt="facebook" />
+                  <p class="overview__subtitle">Likes</p>
+                  <p class="overview__num">52</p>
+                  <div class="overview__percent red">
+                     <img src="images/icon-down.svg" alt="" />
+                     2%
+                  </div>
+               </div>
 
-            <div class="card">
-               <img src="images/icon-facebook.svg" alt="facebook">
-               <p class="overview__subtitle">Likes</p>
-               <p class="overview__num">52</p>
-               <p class="overview__percent">2%</p>
-            </div>
+               <div class="overview__card">
+                  <img src="images/icon-instagram.svg" alt="instagram" />
+                  <p class="overview__subtitle">Likes</p>
+                  <p class="overview__num">5462</p>
+                  <div class="overview__percent green">
+                     <img src="images/icon-up.svg" alt="" />
+                     2257%
+                  </div>
+               </div>
 
-            <div class="card">
-               <img src="images/icon-instagram.svg" alt="instagram">
-               <p class="overview__subtitle">Likes</p>
-               <p class="overview__num">5462</p>
-               <p class="overview__percent">2257%</p>
-            </div>
+               <div class="overview__card">
+                  <img src="images/icon-instagram.svg" alt="instagram" />
+                  <p class="overview__subtitle">Profile Views</p>
+                  <p class="overview__num">52k</p>
+                  <div class="overview__percent green">
+                     <img src="images/icon-up.svg" alt="" />
+                     1375%
+                  </div>
+               </div>
 
-            <div class="card">
-               <img src="images/icon-instagram.svg" alt="instagram">
-               <p class="overview__subtitle">Profile Views</p>
-               <p class="overview__num">52k</p>
-               <p class="overview__percent">1375%</p>
-            </div>
+               <div class="overview__card">
+                  <img src="images/icon-twitter.svg" alt="twitter" />
+                  <p class="overview__subtitle">Retweets</p>
+                  <p class="overview__num">117</p>
+                  <div class="overview__percent green">
+                     <img src="images/icon-up.svg" alt="" />
+                     303%
+                  </div>
+               </div>
 
-            <div class="card">
-               <img src="images/icon-twitter.svg" alt="twitter">
-               <p class="overview__subtitle">Retweets</p>
-               <p class="overview__num">117</p>
-               <p class="overview__percent">303%</p>
-            </div>
+               <div class="overview__card">
+                  <img src="images/icon-twitter.svg" alt="twitter" />
+                  <p class="overview__subtitle">Likes</p>
+                  <p class="overview__num">507</p>
+                  <div class="overview__percent green">
+                     <img src="images/icon-up.svg" alt="" />
+                     553%
+                  </div>
+               </div>
 
-            <div class="card">
-               <img src="images/icon-twitter.svg" alt="twitter">
-               <p class="overview__subtitle">Likes</p>
-               <p class="overview__num">507</p>
-               <p class="overview__percent">553%</p>
-            </div>
+               <div class="overview__card">
+                  <img src="images/icon-youtube.svg" alt="youtube" />
+                  <p class="overview__subtitle">Likes</p>
+                  <p class="overview__num">107</p>
+                  <div class="overview__percent red">
+                     <img src="images/icon-down.svg" alt="" />
+                     19%
+                  </div>
+               </div>
 
-            <div class="card">
-               <img src="images/icon-youtube.svg" alt="youtube">
-               <p class="overview__subtitle">Likes</p>
-               <p class="overview__num">107</p>
-               <p class="overview__percent">19%</p>
-            </div>
-
-            <div class="card">
-               <img src="images/icon-youtube.svg" alt="youtube">
-               <p class="overview__subtitle">Total Views</p>
-               <p class="overview__num">1407</p>
-               <p class="overview__percent">12%</p>
+               <div class="overview__card">
+                  <img src="images/icon-youtube.svg" alt="youtube" />
+                  <p class="overview__subtitle">Total Views</p>
+                  <p class="overview__num">1407</p>
+                  <div class="overview__percent red">
+                     <img src="images/icon-down.svg" alt="" />
+                     12%
+                  </div>
+               </div>
             </div>
          </div>
          <!-- overview end -->
       </div>
       <!-- container end -->
 
-      <div class="attribution">
-         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
-         <a href="#">Your Name Here</a>.
-      </div>
+      <script src="js/index.js"></script>
    </body>
 </html>

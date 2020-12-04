@@ -2,7 +2,7 @@
    .label {
       position: relative;
       display: flex;
-      background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+      background: var(--clr-gradient);
       border-radius: 50px;
       height: 24px;
       width: 50px;
@@ -16,7 +16,7 @@
       width: 18px;
       height: 18px;
       border-radius: 50%;
-      background-color: $very-dark-blue;
+      background-color: var(--clr-very-dark-blue);
       /* transiton the transform property */
       transition: transform 0.2s linear;
    }

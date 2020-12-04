@@ -1,0 +1,43 @@
+.title {
+   max-width: 326px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 42px;
+   @media(min-width:733px){
+      max-width: 675px;
+   }
+   @media(min-width:1083px){
+      max-width: 1020px;
+   }
+
+   &__heading {
+      margin-bottom: 42px;
+
+      &::after{
+         position: relative;
+         bottom: -22px;
+         content: "";
+         display: block;
+         height: 1px;
+         background: var(--clr-desaturated-blue);
+      }
+   }
+
+   &__main {
+      font-size: $font-md;
+      font-weight: $bold;
+   }
+
+   &__numbers,
+   &__mode-clr {
+      font-size: $font-sm;
+      font-weight: $bold;
+      color: var(--clr-desaturated-blue);
+   }
+
+   &__mode {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+}
